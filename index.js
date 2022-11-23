@@ -5,9 +5,10 @@ const PORT = 5000;
 const server = http.createServer((req, res) => {
   if (req.url == "/") {
     res.writeHead(200, { "Content-Type": "text/html" });
-    res.end(
-      "<html><body><h2>File Handling Crud Operartions</h2></body></html>"
+    res.write(
+      '<html><body style="background-color:aqua;"><h2 style="color:Black;text-align:center;marin-bottom:40px">File Handling Crud Operartions</h2><br><a href="/createfile" style="padding: 15px 30px;background-color: #5d70c3;border-radius:10px; color: white; font-size:1.5em; text-decoration:none; margin-left: 60px;">Create</a><a href="/readfile" style="padding:15px 30px;border-radius:10px;background-color: #5d70c3; color: white; font-size:1.5em; text-decoration:none; margin-left: 60px;" ">Read</a><a href="/updatefile" style="padding: 15px 30px;background-color: #5d70c3; color: white; font-size:1.5em; text-decoration:none;border-radius:10px;  margin-left: 60px;"">Update</a><a href="/deletefile" style="padding: 15px 30px;background-color: #5d70c3; color: white; font-size:1.5em; text-decoration:none;border-radius:10px; margin-left: 60px;" ">Delete</a></body></html>'
     );
+    res.end();
   } else if (req.url == "/createfile") {
     if (fs.existsSync("crud.txt")) {
       res.end("File is already exists");
