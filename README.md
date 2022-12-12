@@ -6,7 +6,7 @@
 ## Task 3 Create a Login and Registration aplication with Handlebar Js
 ## [Task 3 Git URL ](https://github.com/noman318/TrainingTask4.git)
 
-## Task4 Create a crud app with mangoose and Jade Template Engine 
+## Task4 Create a crud app with mongoose and Jade Template Engine 
 ## [Task 4 Git URL ](https://github.com/noman318/assesmentTask.git)
 
 ## Task5 Develop a login , regis app with dashboard with activation link , image upload in registration and reset password features
